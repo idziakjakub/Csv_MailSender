@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Csv_MailSender>
+        <version>0.1.0</version>
+        </Csv_MailSender>
+    </modules>
+    <crontab>
+        <jobs>
+            <send_emails_to_customers>
+                <schedule>
+                    <config_path>csv_mailsender/options/scheduler_cron_expr</config_path>
+                </schedule>
+                <run>
+                    <model>csv_mailsender/send::sendEmails</model>
+                </run>
+            </send_emails_to_customers>
+        </jobs>
+    </crontab>
+    <global>
+        <helpers>
+            <csv_mailsender>
+                <class>Csv_MailSender_Helper</class>
+            </csv_mailsender>
+        </helpers>
+        <models>
+            <csv_mailsender>
+                <class>Csv_MailSender_Model</class>
+            </csv_mailsender>
+        </models>
+    </global>
+    <default>
+        <csv_mailsender>
+            <options>
+                <scheduler_cron_expr>* * * * *</scheduler_cron_expr>
+                <path>csv/plik.csv</path>
+                <mail_count>100</mail_count>
+                <user_name_csv_id></user_name_csv_id>
+                <user_email_csv_id></user_email_csv_id>
+            </options>
+        </csv_mailsender>
+    </default>
+</config> 
