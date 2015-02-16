@@ -37,9 +37,9 @@ class Csv_MailSender_Model_Send
 	}
 
 	public function readCsvData($filePath)
-    {
-        $csv = new Varien_File_Csv();
-        return $csv->getData($filePath);
+	{
+		$csv = new Varien_File_Csv();
+		return $csv->getData($filePath);
     }
 
 	public function getFilePath() 

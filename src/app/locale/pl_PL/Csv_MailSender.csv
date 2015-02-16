@@ -3,7 +3,7 @@
 "Email Template","Szablon email"
 "Path to CSV file","Ścieżka do pliku CSV"
 "File in 'var' directory e.g. csv/example.csv","Plik w folderze 'var' np. csv/example.csv"
-"Mail quantity","Ilość e-maili"
+"E-mail quantity","Ilość e-maili"
 "Enter amount of e-mails in one package","Podaj ilośc e-maili w jednej paczce"
 "Column number with username","Numer kolumny z imieniem"
 "Enter the number of column where is client name", "Podaj numer kolumny, w którym występuje imię klienta"

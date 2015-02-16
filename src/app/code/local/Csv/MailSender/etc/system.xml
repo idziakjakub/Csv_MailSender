@@ -22,7 +22,7 @@
                         <scheduler_cron_expr translate="label comment">
                             <label>Cron expression</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>1</sort_order>
+                            <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <comment><![CDATA[E.g. */15 * * * *]]></comment>
                         </scheduler_cron_expr>
@@ -30,7 +30,7 @@
                             <label>Email Template</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_email_template</source_model>
-                            <sort_order>2</sort_order>
+                            <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -38,41 +38,41 @@
                         <path translate="label comment">
                             <label>Path to CSV file</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>1</sort_order>
+                            <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <comment><![CDATA[File in 'var' directory e.g. csv/example.csv]]></comment>
                         </path>
                         <mail_count translate="label comment">
                             <label>Mail quantity</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>1</sort_order>
+                            <sort_order>40</sort_order>
                             <show_in_default>1</show_in_default>
                             <comment><![CDATA[Enter amount of e-mails in one package]]></comment>
                         </mail_count>
                         <customer_name_csv_id translate="label comment">
                             <label>Column number with username</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>1</sort_order>
+                            <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <comment><![CDATA[Enter the number of column where is client name]]></comment>
                         </customer_name_csv_id>
                         <customer_email_csv_id translate="label comment">
                             <label>Column number with e-mail adress</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>1</sort_order>
+                            <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
                             <comment><![CDATA[Enter the number of column where is client e-mail]]></comment>
                         </customer_email_csv_id>
                         <sender_name translate="label">
                             <label>Sender name</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>1</sort_order>
+                            <sort_order>70</sort_order>
                             <show_in_default>1</show_in_default>
                         </sender_name>
                         <sender_email translate="label">
                             <label>Sender e-mail</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>1</sort_order>
+                            <sort_order>80</sort_order>
                             <show_in_default>1</show_in_default>
                         </sender_email>
                     </fields>
