@@ -33,10 +33,12 @@
         <csv_mailsender>
             <options>
                 <scheduler_cron_expr>* * * * *</scheduler_cron_expr>
-                <path>csv/plik.csv</path>
+                <path>csv/example.csv</path>
                 <mail_count>100</mail_count>
-                <user_name_csv_id></user_name_csv_id>
-                <user_email_csv_id></user_email_csv_id>
+                <customer_name_csv_id>1</customer_name_csv_id>
+                <customer_email_csv_id>8</customer_email_csv_id>
+                <sender_name>John Doe</sender_name>
+                <sender_email>example@example.com</sender_email>
             </options>
         </csv_mailsender>
     </default>

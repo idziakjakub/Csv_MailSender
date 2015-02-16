@@ -1,0 +1,2 @@
+transaction_labels;parentId;CustomerName;CustomerPhone;CustomerAddress;CustomerZip;CustomerCity;CustomerCountryCode;CustomerCountryName;CustomerEmail
+transaction;;Jon Doe;123456789;Street 5;68498;Newcity;US;Unites States;example@example.com

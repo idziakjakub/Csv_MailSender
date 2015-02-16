@@ -6,25 +6,25 @@
         </mailsender>
     </tabs>
     <sections>
-        <csv_mailsender translate="label" module="csv_mailsender">
-            <label>Ustawienia</label>
+        <csv_mailsender translate="label">
+            <label>Settings</label>
             <tab>mailsender</tab>
             <frontend_type>text</frontend_type>
             <sort_order>5</sort_order>
             <show_in_default>1</show_in_default>
             <groups>
-                <options>
-                    <label>Ustawienia</label>
+                <options translate="label">
+                    <label>Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>1</sort_order>
                     <show_in_default>1</show_in_default>
                     <fields>
-                        <scheduler_cron_expr translate="label">
-                            <label>Wyrażenie cron</label>
+                        <scheduler_cron_expr translate="label comment">
+                            <label>Cron expression</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
-                            <comment><![CDATA[np. */15 * * * *]]></comment>
+                            <comment><![CDATA[E.g. */15 * * * *]]></comment>
                         </scheduler_cron_expr>
                         <email_template translate="label">
                             <label>Email Template</label>
@@ -35,34 +35,46 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </email_template>
-                        <path translate="label">
-                            <label>Ścieżka do pliku CSV</label>
+                        <path translate="label comment">
+                            <label>Path to CSV file</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
-                            <comment><![CDATA[Plik w folderze var np. csv/plik.csv]]></comment>
+                            <comment><![CDATA[File in 'var' directory e.g. csv/example.csv]]></comment>
                         </path>
-                        <mail_count translate="label">
-                            <label>Ilość maili</label>
+                        <mail_count translate="label comment">
+                            <label>Mail quantity</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
-                            <comment><![CDATA[Podaj ilośc maili w jednej paczce]]></comment>
+                            <comment><![CDATA[Enter amount of e-mails in one package]]></comment>
                         </mail_count>
-                        <user_name_csv_id translate="label">
-                            <label>Numer kolumny z imieniem</label>
+                        <customer_name_csv_id translate="label comment">
+                            <label>Column number with username</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
-                            <comment><![CDATA[Podaj numer kolumny, w którym występuje imię klienta]]></comment>
-                        </user_name_csv_id>
-                        <user_email_csv_id translate="label">
-                            <label>Numer kolumny z imieniem adresem e-mail</label>
+                            <comment><![CDATA[Enter the number of column where is client name]]></comment>
+                        </customer_name_csv_id>
+                        <customer_email_csv_id translate="label comment">
+                            <label>Column number with e-mail adress</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
-                            <comment><![CDATA[Podaj numer kolumny, w którym występuje adres e-mail klienta]]></comment>
-                        </user_email_csv_id>
+                            <comment><![CDATA[Enter the number of column where is client e-mail]]></comment>
+                        </customer_email_csv_id>
+                        <sender_name translate="label">
+                            <label>Sender name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </sender_name>
+                        <sender_email translate="label">
+                            <label>Sender e-mail</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </sender_email>
                     </fields>
                 </options>
             </groups>
