@@ -1,2 +1,3 @@
-src/app/etc/modules/*				    		app/etc/modules
+src/app/etc/modules/Csv_MailSender.xml			app/etc/modules/Csv_MailSender.xml
 src/app/code/local/Csv/MailSender/*				app/code/local/Csv/MailSender
+src/app/locale/pl_PL/Csv_MailSender.csv			src/app/locale/pl_PL/Csv_MailSender.csv
