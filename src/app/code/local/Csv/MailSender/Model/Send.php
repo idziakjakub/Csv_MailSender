@@ -20,8 +20,8 @@ class Csv_MailSender_Model_Send
 		(int) $i = 0;
 		foreach (array_slice($csvData, 1 + $lastId) as $item) {
 			if($i < $mailCount) {
-				$recepientName = $item[$userNameColumnId+1];
-				$recepientEmail = $item[$userEmailColumnId+1];
+				$recepientName = $item[$userNameColumnId-1];
+				$recepientEmail = $item[$userEmailColumnId-1];
 				$sender = array('name' => $senderName, 'email' => $senderEmail);
         		$vars = array('user_name' => $recepientName);
         		$emailTemplate->sendTransactional($emailTemplateCode, $sender, $recepientEmail, $recepientName, $vars, $storeId);
