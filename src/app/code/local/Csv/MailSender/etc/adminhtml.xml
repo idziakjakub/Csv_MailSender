@@ -1,35 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <acl>
-        <resources>
-          <all>
-            <title>Allow Everything</title>
-          </all>
-          <admin>
+  <acl>
+    <resources>
+      <all>
+        <title>Allow Everything</title>
+      </all>
+      <admin>
+        <children>
+          <system>
             <children>
-              <system>
+              <config>
                 <children>
-                  <config>
-                    <children>
-                      <csv_mailsender translate="title">
-                        <title>Settings</title>
-                        <sort_order>100</sort_order>
-                      </csv_mailsender>
-                    </children>
-                  </config>
+                  <csv_mailsender translate="title" module="csv_mailsender">
+                    <title>Settings</title>
+                    <sort_order>100</sort_order>
+                  </csv_mailsender>
                 </children>
-              </system>
+              </config>
             </children>
-          </admin>
-        </resources>
-      </acl>
-      <translate>
-           <modules>
-               <csv_mailsender>
-                   <files>
-                       <default>Csv_MailSender.csv</default>
-                   </files>
-               </csv_mailsender>
-           </modules>
-       </translate>
+          </system>
+        </children>
+      </admin>
+    </resources>
+  </acl>
 </config>

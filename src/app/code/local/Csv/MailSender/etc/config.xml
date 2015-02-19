@@ -29,14 +29,25 @@
             </csv_mailsender>
         </models>
     </global>
+    <adminhtml>
+        <translate>
+           <modules>
+               <csv_mailsender>
+                   <files>
+                       <default>Csv_MailSender.csv</default>
+                   </files>
+               </csv_mailsender>
+           </modules>
+       </translate>
+    </adminhtml>
     <default>
         <csv_mailsender>
             <options>
                 <scheduler_cron_expr>* * * * *</scheduler_cron_expr>
                 <path>csv/example.csv</path>
-                <mail_count>100</mail_count>
-                <customer_name_csv_id>1</customer_name_csv_id>
-                <customer_email_csv_id>8</customer_email_csv_id>
+                <mail_count>10</mail_count>
+                <customer_name_csv_id>3</customer_name_csv_id>
+                <customer_email_csv_id>10</customer_email_csv_id>
                 <sender_name>John Doe</sender_name>
                 <sender_email>example@example.com</sender_email>
             </options>

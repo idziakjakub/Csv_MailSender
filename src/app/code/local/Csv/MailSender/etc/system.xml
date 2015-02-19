@@ -1,19 +1,19 @@
 <config>
     <tabs>
-        <mailsender translate="label">
+        <mailsender translate="label" module="csv_mailsender">
             <label>Csv Mail Sender</label>
             <sort_order>20</sort_order>
         </mailsender>
     </tabs>
     <sections>
-        <csv_mailsender translate="label">
+        <csv_mailsender translate="label" module="csv_mailsender">
             <label>Settings</label>
             <tab>mailsender</tab>
             <frontend_type>text</frontend_type>
             <sort_order>5</sort_order>
             <show_in_default>1</show_in_default>
             <groups>
-                <options translate="label">
+                <options translate="label" module="csv_mailsender">
                     <label>Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>1</sort_order>
@@ -43,7 +43,7 @@
                             <comment><![CDATA[File in 'var' directory e.g. csv/example.csv]]></comment>
                         </path>
                         <mail_count translate="label comment">
-                            <label>Mail quantity</label>
+                            <label>E-mail quantity</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>40</sort_order>
                             <show_in_default>1</show_in_default>

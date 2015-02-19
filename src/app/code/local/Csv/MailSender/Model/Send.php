@@ -4,8 +4,8 @@ class Csv_MailSender_Model_Send
 	public function sendEmails() 
 	{
 		(int) $mailCount = Mage::getStoreConfig('csv_mailsender/options/mail_count');
-		(int) $userNameColumnId = Mage::getStoreConfig('csv_mailsender/options/user_name_csv_id');
-		(int) $userEmailColumnId = Mage::getStoreConfig('csv_mailsender/options/user_email_csv_id');
+		(int) $userNameColumnId = Mage::getStoreConfig('csv_mailsender/options/customer_name_csv_id');
+		(int) $userEmailColumnId = Mage::getStoreConfig('csv_mailsender/options/customer_email_csv_id');
 		(int) $emailTemplateCode = Mage::getStoreConfig('csv_mailsender/options/email_template');
 		/** @var Mage_Core_Model_Email_Template $emailTemplate */
 		$emailTemplate = Mage::getModel('core/email_template')->loadByCode($emailTemplateCode);
@@ -29,7 +29,6 @@ class Csv_MailSender_Model_Send
 				$currentState = array('last_id' => $lastId + $i);
 				$flagModel->setFlagData($currentState)->save();
 			} else {
-				Mage::log($currentState['last_id']);
 				break;
 				return true;
 			}
